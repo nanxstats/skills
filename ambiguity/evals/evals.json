@@ -1,0 +1,20 @@
+{
+  "skill_name": "ambiguity",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm working on a short story and this passage feels flat. Can you help me make it more sophisticated?\n\n\"Margaret sat at the kitchen table, feeling deeply sad about the divorce. She was heartbroken and couldn't believe it was really happening. The coffee in front of her had gone cold, which made her even more depressed. She thought about all the years they had spent together and felt a profound sense of loss. 'I guess this is it,' she said out loud, her voice full of sorrow and regret. She knew she would never be the same again. The emptiness inside her was overwhelming and she wondered if she would ever feel happy again.\"",
+      "expected_output": "The agent should identify specific over-explained emotions, propose revisions that use implication and restraint, show the original vs revised side by side, and explain what the revision gains. Should NOT add purple prose or fake profundity."
+    },
+    {
+      "id": 2,
+      "prompt": "Can you help me tighten the writing in this discussion paragraph from my paper? Something feels off about the confidence level.\n\n\"Our results demonstrate conclusively that the intervention caused a significant improvement in patient outcomes. The data clearly shows that the treatment group performed better across all metrics. It could perhaps be argued that there may be some confounding variables, but we believe our methodology adequately controlled for these. Further research is needed to explore these findings in greater depth. The implications of this study are profound and far-reaching, potentially revolutionizing how clinicians approach treatment in this domain.\"",
+      "expected_output": "The agent should identify the mixed epistemic registers (claiming causation from correlational data, empty hedging about confounders, throwaway 'further research' line, inflated implications). Should recalibrate language to match actual evidential warrant. Should NOT just add more hedges everywhere."
+    },
+    {
+      "id": 3,
+      "prompt": "I built a config management CLI tool and I think my README is misleading users. People keep opening issues saying 'this doesn't work' when they hit edge cases. Here's the current README intro:\n\n\"# configctl\\n\\nThe simplest way to manage your configuration files. Just run `configctl init` and you're done! configctl automatically detects your environment, merges your config sources, and keeps everything in sync. No setup required — it just works.\\n\\n## Quick Start\\n`pip install configctl`\\n`configctl init`\\nThat's it! Your configs are now managed.\\n\\nNote: configctl supports YAML, TOML, JSON, and INI formats.\"\n\nThe reality is that configctl has a merge strategy system with 3 modes (overlay, deep-merge, replace), environment detection can fail on non-standard setups and needs a fallback config, and the 'init' command actually scans your whole home directory which surprises people. How do I make the docs honest without scaring people away?",
+      "expected_output": "The agent should identify the fake simplicity pattern, propose docs that surface the real complexity (merge strategies, env detection limitations, init scope) without becoming intimidating. Should frame the tool's configurability as a strength. Should distinguish what genuinely is simple from what only appears simple."
+    }
+  ]
+}
