@@ -1,0 +1,32 @@
+{
+  "eval_id": 2,
+  "eval_name": "academic-writing",
+  "prompt": "Can you help me tighten the writing in this discussion paragraph from my paper? Something feels off about the confidence level.\n\n\"Our results demonstrate conclusively that the intervention caused a significant improvement in patient outcomes. The data clearly shows that the treatment group performed better across all metrics. It could perhaps be argued that there may be some confounding variables, but we believe our methodology adequately controlled for these. Further research is needed to explore these findings in greater depth. The implications of this study are profound and far-reaching, potentially revolutionizing how clinicians approach treatment in this domain.\"",
+  "assertions": [
+    {
+      "id": "identifies-overclaiming",
+      "text": "Identifies that 'demonstrate conclusively' and 'caused' overclaim — the language implies causal certainty that the study design may not warrant",
+      "type": "qualitative"
+    },
+    {
+      "id": "identifies-empty-hedging",
+      "text": "Identifies the 'it could perhaps be argued that there may be' construction as empty hedging that adds qualifications without substance",
+      "type": "qualitative"
+    },
+    {
+      "id": "identifies-inflated-implications",
+      "text": "Flags the 'profound and far-reaching, potentially revolutionizing' language as inflated beyond what the evidence supports",
+      "type": "qualitative"
+    },
+    {
+      "id": "proposes-calibrated-revision",
+      "text": "Proposes a revision that recalibrates confidence levels — using appropriate epistemic language (e.g., 'suggest' vs 'demonstrate', 'associated with' vs 'caused')",
+      "type": "qualitative"
+    },
+    {
+      "id": "improves-further-research",
+      "text": "Transforms the generic 'further research is needed' into something specific about what remains unresolved and why it matters",
+      "type": "qualitative"
+    }
+  ]
+}

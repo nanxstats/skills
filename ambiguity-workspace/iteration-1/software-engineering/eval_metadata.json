@@ -1,0 +1,32 @@
+{
+  "eval_id": 3,
+  "eval_name": "software-engineering",
+  "prompt": "I built a config management CLI tool and I think my README is misleading users. People keep opening issues saying 'this doesn't work' when they hit edge cases. Here's the current README intro:\n\n\"# configctl\\n\\nThe simplest way to manage your configuration files. Just run `configctl init` and you're done! configctl automatically detects your environment, merges your config sources, and keeps everything in sync. No setup required — it just works.\\n\\n## Quick Start\\n`pip install configctl`\\n`configctl init`\\nThat's it! Your configs are now managed.\\n\\nNote: configctl supports YAML, TOML, JSON, and INI formats.\"\n\nThe reality is that configctl has a merge strategy system with 3 modes (overlay, deep-merge, replace), environment detection can fail on non-standard setups and needs a fallback config, and the 'init' command actually scans your whole home directory which surprises people. How do I make the docs honest without scaring people away?",
+  "assertions": [
+    {
+      "id": "identifies-fake-simplicity",
+      "text": "Identifies the current README as fake simplicity — hiding real complexity (merge modes, env detection limits, init scope) behind 'it just works' language",
+      "type": "qualitative"
+    },
+    {
+      "id": "surfaces-merge-strategies",
+      "text": "The proposed revision mentions the 3 merge modes and helps the user understand when each applies, without making it feel intimidating",
+      "type": "qualitative"
+    },
+    {
+      "id": "addresses-init-scope",
+      "text": "The proposed revision is honest about what 'configctl init' actually does (scans home directory) so users are not surprised",
+      "type": "qualitative"
+    },
+    {
+      "id": "frames-complexity-as-strength",
+      "text": "Frames the tool's configurability (multiple merge modes, format support, env detection) as a strength rather than apologizing for it",
+      "type": "qualitative"
+    },
+    {
+      "id": "preserves-quick-start",
+      "text": "Still provides a clear, usable quick-start path — does not drown the newcomer in configuration options upfront",
+      "type": "qualitative"
+    }
+  ]
+}

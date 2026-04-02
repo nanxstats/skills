@@ -1,0 +1,32 @@
+{
+  "eval_id": 1,
+  "eval_name": "creative-writing",
+  "prompt": "I'm working on a short story and this passage feels flat. Can you help me make it more sophisticated?\n\n\"Margaret sat at the kitchen table, feeling deeply sad about the divorce. She was heartbroken and couldn't believe it was really happening. The coffee in front of her had gone cold, which made her even more depressed. She thought about all the years they had spent together and felt a profound sense of loss. 'I guess this is it,' she said out loud, her voice full of sorrow and regret. She knew she would never be the same again. The emptiness inside her was overwhelming and she wondered if she would ever feel happy again.\"",
+  "assertions": [
+    {
+      "id": "identifies-over-explanation",
+      "text": "Identifies specific sentences that over-explain Margaret's emotions (e.g., 'feeling deeply sad', 'heartbroken', 'even more depressed', 'profound sense of loss') rather than giving generic advice",
+      "type": "qualitative"
+    },
+    {
+      "id": "proposes-concrete-revision",
+      "text": "Proposes at least one concrete rewritten passage (not just advice about what to change)",
+      "type": "qualitative"
+    },
+    {
+      "id": "revision-uses-implication",
+      "text": "The revised passage conveys emotion through action, sensory detail, or implication rather than directly naming emotions",
+      "type": "qualitative"
+    },
+    {
+      "id": "explains-why-revision-works",
+      "text": "Briefly explains why the revision is stronger — what it opens up or preserves — rather than just presenting it",
+      "type": "qualitative"
+    },
+    {
+      "id": "avoids-purple-prose",
+      "text": "The revised passage does not introduce purple prose, overwrought metaphors, or fake profundity",
+      "type": "qualitative"
+    }
+  ]
+}

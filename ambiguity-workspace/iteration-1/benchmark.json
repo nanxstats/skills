@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "skill_name": "ambiguity",
+    "skill_path": "/Users/nanx/skills/ambiguity",
+    "executor_model": "claude-opus-4-6",
+    "timestamp": "2026-04-02T05:17:44Z",
+    "evals_run": ["creative-writing", "academic-writing", "software-engineering"],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_name": "creative-writing",
+      "configuration": "with_skill",
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5,
+      "time_seconds": 45.6,
+      "tokens": 13479
+    },
+    {
+      "eval_name": "creative-writing",
+      "configuration": "without_skill",
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5,
+      "time_seconds": 38.3,
+      "tokens": 9445
+    },
+    {
+      "eval_name": "academic-writing",
+      "configuration": "with_skill",
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5,
+      "time_seconds": 50.3,
+      "tokens": 13532
+    },
+    {
+      "eval_name": "academic-writing",
+      "configuration": "without_skill",
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5,
+      "time_seconds": 31.6,
+      "tokens": 9281
+    },
+    {
+      "eval_name": "software-engineering",
+      "configuration": "with_skill",
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5,
+      "time_seconds": 62.3,
+      "tokens": 14165
+    },
+    {
+      "eval_name": "software-engineering",
+      "configuration": "without_skill",
+      "pass_rate": 1.0,
+      "passed": 5,
+      "total": 5,
+      "time_seconds": 49.0,
+      "tokens": 10008
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "mean_pass_rate": 1.0,
+      "mean_time_seconds": 52.7,
+      "mean_tokens": 13725
+    },
+    "without_skill": {
+      "mean_pass_rate": 1.0,
+      "mean_time_seconds": 39.6,
+      "mean_tokens": 9578
+    },
+    "delta": {
+      "pass_rate": "+0.00",
+      "time_seconds": "+13.1",
+      "tokens": "+4147"
+    }
+  },
+  "notes": [
+    "All 15 assertions pass for both with-skill and without-skill runs. The assertions are non-discriminating at this granularity — both configurations achieve the same pass rate.",
+    "The qualitative differences are substantial despite identical pass rates. The with-skill outputs consistently provide: (1) two revision options at varying levels of ambiguity instead of one, (2) more precise diagnostic vocabulary (e.g., 'fake simplicity,' 'emotional over-direction,' 'epistemic register'), (3) stronger framing of why revisions work, and (4) explicit connection to the earned-ambiguity philosophy.",
+    "The with-skill runs use ~43% more tokens and ~33% more time on average, reflecting the additional structure (dual revisions, deeper analysis).",
+    "The software-engineering eval shows the largest qualitative gap: with-skill explicitly names the fake simplicity pattern and frames configurability as a strength; without-skill is practical but more mechanical."
+  ]
+}

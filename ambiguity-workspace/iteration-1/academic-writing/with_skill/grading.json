@@ -1,0 +1,31 @@
+{
+  "eval_id": 2,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies overclaiming ('demonstrate conclusively', 'caused')",
+      "passed": true,
+      "evidence": "Sentence-by-sentence analysis. Identifies 'conclusively,' 'caused,' and 'significant' as three stacked overclaims. Notes 'caused' asserts causal mechanism most study designs can only gesture toward. Also catches 'clearly' as a confidence marker that adds no information."
+    },
+    {
+      "text": "Identifies empty hedging construction",
+      "passed": true,
+      "evidence": "Specifically calls out four hedges (could, perhaps, may, some). Labels it 'empty hedging — a qualification that protects the author without adding information.' Notes that 'we believe' is the wrong register for a methodological claim."
+    },
+    {
+      "text": "Flags inflated implications language",
+      "passed": true,
+      "evidence": "Calls 'profound,' 'far-reaching,' 'revolutionizing' — 'grandiosity posing as a conclusion.' Notes 'The stronger your actual findings, the less you need language like this to carry them.'"
+    },
+    {
+      "text": "Proposes revision with calibrated epistemic language",
+      "passed": true,
+      "evidence": "Two revisions: Revision A uses 'suggest,' 'associated with,' 'may inform.' Revision B distinguishes observation from inference from interpretation. Both include placeholder brackets for study-specific details."
+    },
+    {
+      "text": "Transforms generic 'further research' into specific unresolved questions",
+      "passed": true,
+      "evidence": "Revision A: 'Future work should examine whether these effects persist in [specific population or setting].' Revision B: 'What they leave open — and what subsequent work will need to resolve — is [specific unresolved question].'"
+    }
+  ]
+}

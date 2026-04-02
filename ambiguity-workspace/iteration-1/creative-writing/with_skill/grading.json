@@ -1,0 +1,31 @@
+{
+  "eval_id": 1,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies specific sentences that over-explain Margaret's emotions",
+      "passed": true,
+      "evidence": "Identifies 7 explicit emotion-labels in 8 sentences. Calls out 'feeling deeply sad,' 'heartbroken,' 'even more depressed,' 'profound sense of loss' individually. Notes the cold coffee detail is 'wasted' because the text immediately explains its significance."
+    },
+    {
+      "text": "Proposes at least one concrete rewritten passage",
+      "passed": true,
+      "evidence": "Two full rewritten passages: Revision A (restrained, mostly external) and Revision B (slightly more interior access). Both are complete, self-contained rewrites."
+    },
+    {
+      "text": "Revision uses implication rather than directly naming emotions",
+      "passed": true,
+      "evidence": "Revision A uses cold coffee, dripping faucet, and pouring out the mug. Revision B uses ceramic pulling heat, Tuesday grocery runs, thermostat settings. Neither revision names an emotion directly."
+    },
+    {
+      "text": "Explains why the revision is stronger",
+      "passed": true,
+      "evidence": "Each revision has a 'What this gains' section. E.g., 'The reader arrives at the grief rather than being told about it' and 'The mundane details do more to convey what is being lost than any amount of explicit sorrow-language.'"
+    },
+    {
+      "text": "Avoids introducing purple prose or fake profundity",
+      "passed": true,
+      "evidence": "Both revisions are restrained and concrete. No overwrought metaphors. The closing image in Revision A (pouring out coffee) is physical and understated. Revision B's 'The kitchen didn't answer' is dry, not purple."
+    }
+  ]
+}

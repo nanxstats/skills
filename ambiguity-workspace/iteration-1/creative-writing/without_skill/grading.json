@@ -1,0 +1,31 @@
+{
+  "eval_id": 1,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies specific sentences that over-explain Margaret's emotions",
+      "passed": true,
+      "evidence": "Lists 'feeling deeply sad,' 'heartbroken,' 'even more depressed,' 'profound sense of loss,' 'sorrow and regret,' 'emptiness,' 'overwhelming' as explicit emotion-naming. Identifies redundancy and lack of concrete detail."
+    },
+    {
+      "text": "Proposes at least one concrete rewritten passage",
+      "passed": true,
+      "evidence": "One complete rewritten passage with concrete sensory details (mug crescent, dog-eared Middlemarch, settlement papers, sprinkler)."
+    },
+    {
+      "text": "Revision uses implication rather than directly naming emotions",
+      "passed": true,
+      "evidence": "Replaces named emotions with concrete objects and actions: the crescent on the thumb, the book frozen at page 212, the sprinkler. One brief italicized thought at the very end but it is observation, not emotion-naming."
+    },
+    {
+      "text": "Explains why the revision is stronger",
+      "passed": true,
+      "evidence": "Has a 'Key Techniques Used' section explaining each technique (concrete sensory detail, objects carry meaning, subtext in action, restrained dialogue, closing image, sentence rhythm)."
+    },
+    {
+      "text": "Avoids introducing purple prose or fake profundity",
+      "passed": true,
+      "evidence": "Mostly restrained. The closing sprinkler image with the italicized internal thought edges toward being more literary/writerly than strictly necessary, but does not cross into purple prose."
+    }
+  ]
+}

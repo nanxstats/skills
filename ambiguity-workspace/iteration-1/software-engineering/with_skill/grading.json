@@ -1,0 +1,31 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies the README as fake simplicity",
+      "passed": true,
+      "evidence": "Explicitly names and explains the 'fake simplicity' vs 'polished simplicity' distinction from the skill. 'Your README is doing the second thing.' Identifies five specific false claims in the original."
+    },
+    {
+      "text": "Surfaces the 3 merge modes clearly",
+      "passed": true,
+      "evidence": "Option B includes a merge strategy table (overlay, deep-merge, replace) with behavior descriptions and default marked. Option A mentions the three strategies by name with a pointer to a detailed section."
+    },
+    {
+      "text": "Is honest about init's scope (home directory scan)",
+      "passed": true,
+      "evidence": "Both options state that init scans the home directory. Option A: 'The init command scans your home directory.' Option B: 'configctl will scan your home directory for config files.' Both provide --scope as escape hatch."
+    },
+    {
+      "text": "Frames configurability as a strength",
+      "passed": true,
+      "evidence": "'Well-documented tradeoffs are a form of confidence, not weakness.' Option B frames complexity as graduation: 'the defaults are choices, not magic.' The closing says 'stop promising that nothing can go wrong, and start showing the user what the tool actually does. That is not a loss of marketing appeal. It is a gain in trust.'"
+    },
+    {
+      "text": "Preserves a usable quick-start path",
+      "passed": true,
+      "evidence": "Both options keep 'pip install configctl / configctl init' as the entry point. Option B explicitly says 'If that is all you need, you are done' after the quick start."
+    }
+  ]
+}

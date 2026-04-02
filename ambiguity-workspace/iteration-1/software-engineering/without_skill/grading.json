@@ -1,0 +1,31 @@
+{
+  "eval_id": 3,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies the README as fake simplicity",
+      "passed": true,
+      "evidence": "Identifies three 'honesty gaps' mapping claims to user complaints. Uses the phrase 'replace vague confidence with specific confidence.' Does not use the specific 'fake simplicity' vocabulary but captures the same concept."
+    },
+    {
+      "text": "Surfaces the 3 merge modes clearly",
+      "passed": true,
+      "evidence": "Includes a table of the three merge strategies with behavior and default column. Provides both CLI flag and YAML config examples."
+    },
+    {
+      "text": "Is honest about init's scope (home directory scan)",
+      "passed": true,
+      "evidence": "'configctl init scans your home directory (~) to discover existing configuration files.' Provides --root flag to limit scope. Notes scan is read-only."
+    },
+    {
+      "text": "Frames configurability as a strength",
+      "passed": true,
+      "evidence": "General principles include 'Specific beats vague' and 'Defaults should be visible' and 'Escape hatches belong next to the happy path.' Practical framing but less explicitly celebrates the tool's range as a positive."
+    },
+    {
+      "text": "Preserves a usable quick-start path",
+      "passed": true,
+      "evidence": "Quick Start section is preserved with pip install and configctl init. 'What init does' follows immediately after."
+    }
+  ]
+}

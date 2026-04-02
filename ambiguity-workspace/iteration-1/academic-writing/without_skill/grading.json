@@ -1,0 +1,31 @@
+{
+  "eval_id": 2,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies overclaiming ('demonstrate conclusively', 'caused')",
+      "passed": true,
+      "evidence": "Lists 'demonstrate conclusively,' 'clearly shows,' 'across all metrics,' 'profound and far-reaching,' 'potentially revolutionizing' as overclaims. Change table maps 'demonstrate conclusively' to 'suggest.'"
+    },
+    {
+      "text": "Identifies empty hedging construction",
+      "passed": true,
+      "evidence": "Identifies 'four-hedge pile-up' in 'It could perhaps be argued that there may be some.' Notes it 'reads as evasive rather than measured.'"
+    },
+    {
+      "text": "Flags inflated implications language",
+      "passed": true,
+      "evidence": "Flags 'profound and far-reaching, potentially revolutionizing' as overclaim in the summary table."
+    },
+    {
+      "text": "Proposes revision with calibrated epistemic language",
+      "passed": true,
+      "evidence": "Revision uses 'suggest,' 'showed higher scores,' 'could inform.' Change table shows each substitution."
+    },
+    {
+      "text": "Transforms generic 'further research' into specific unresolved questions",
+      "passed": true,
+      "evidence": "Replaces with 'future studies using [specific design, e.g., a multi-site randomized trial] would strengthen causal inference.' Change table notes this explicitly."
+    }
+  ]
+}
